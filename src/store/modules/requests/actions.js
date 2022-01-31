@@ -31,7 +31,7 @@ export default {
       return;
     }
 
-    const { coachId, token } = context.rootGetters;
+    const { userId: coachId, token } = context.rootGetters;
     const response = await fetch(
       `https://vue-basic-6526b-default-rtdb.asia-southeast1.firebasedatabase.app/requests/${coachId}.json?auth=${token}`
     );
